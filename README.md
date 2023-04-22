@@ -1,0 +1,1 @@
+# cviceni-nakupni-seznam
