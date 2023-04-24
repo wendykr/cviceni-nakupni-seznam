@@ -19,17 +19,15 @@ const items = [
     },
 ];
 
-const shoppingListElm = document.querySelector('.shopping-list');
-
-const item = items
+const list = items
     .map(oneItems => `
         <li class="item">
             <div class="item__name">${oneItems.product}</div>
             <div class="item__amount">${oneItems.amount}</div>
         </li>`
         )
-    .join('');
 
-shoppingListElm.innerHTML = `<ul>${item}</ul>`;
+const ulElm = document.querySelector('ul');
+ulElm.innerHTML = list.join('');
 
-console.log(shoppingListElm);
+console.log(ulElm);
